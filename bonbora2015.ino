@@ -1,17 +1,16 @@
-//Cirstmas Mode LED lrumination dessan
-//H.Momma 2015.11.24
-//
+//Cirstmas Mode LED lrumination dessin.
+//Hitoshi.Momma  momma@nifty.com
+//2015.11.24
 //Set white ball still and clored ball to PWM mode
 //Sync ball to be network activities.
 //1/f fluctuation by interval Caos
-
 int value = 0;   // variable to keep the actual value 
 float x = 0.1;
 float x1[]={0.10,0.10,0.10,0.10};
 int   x2[]={11,10,6,5};
 
 void setup() {
-  //Serial.begin(9600);//for debug
+//Serial.begin(9600);//for debug
 // turn the LED on (HIGH is the voltage level)
 pinMode(13,OUTPUT);
 pinMode(12,OUTPUT);
@@ -28,6 +27,8 @@ pinMode(6,OUTPUT);
 pinMode(5,OUTPUT);
 }
 
+// 1/f fluctuation by interval Caos
+//
 void loop() {
   for(int i=0;i<4;i++){
   x = x1[i];  
